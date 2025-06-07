@@ -71,8 +71,6 @@ Desenvolvido como exemplo de boas práticas em gerenciadores de senha.
 
 ### Melhoria no fluxo de adição de senha
 
-- Agora o sistema exibe os requisitos de senha antes de digitar.
-- Se a senha for fraca, o usuário será solicitado a digitar uma nova senha até que ela seja considerada forte.
 - Se a senha tiver sido vazada, o sistema pergunta se o usuário deseja armazená-la mesmo assim.
 
 ### Novas funcionalidades
@@ -81,7 +79,8 @@ Desenvolvido como exemplo de boas práticas em gerenciadores de senha.
     - Ao adicionar uma nova senha, digite `gerar` para que o sistema gere uma senha forte automaticamente.
     - Você pode escolher se deseja usar a senha gerada ou não.
 
-- **Listar senhas descriptografadas**:
+- **Listar senhas descriptografadas**: (Em implementação) 
+
     - Agora ao listar senhas, o sistema exibe o nome do serviço, o usuário e a senha em texto claro (as senhas continuam armazenadas criptografadas).
 
 ### Novas funcionalidades
@@ -91,10 +90,10 @@ Desenvolvido como exemplo de boas práticas em gerenciadores de senha.
     - Senha fraca → exige nova senha.
     - Senha vazada → pergunta se deseja prosseguir.
 
-- **Armazenamento de data de criação/atualização**:
+- **Armazenamento de data de criação/atualização**: (Em implementação)
     - Cada senha agora armazena a data de criação/última atualização.
     - Ao listar as senhas, esta data é exibida.
 
-- **Backup seguro criptografado**:
+- **Backup seguro criptografado**: (Em implementação)
     - Nova opção no menu: "Fazer backup seguro".
     - Gera um arquivo `backup_secure.enc` com todas as credenciais criptografadas.
