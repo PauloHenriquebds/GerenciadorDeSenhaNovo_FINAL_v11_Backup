@@ -12,6 +12,34 @@ Este é um **Gerenciador de Senhas** com as seguintes funcionalidades:
 
 ---
 
+✅ Requisitos atendidos<br>
+
+📌 Cadastro de senhas<br>
+O sistema permite que o usuário adicione credenciais de diferentes serviços.
+
+📌 Criptografia<br>
+As senhas são armazenadas de forma segura utilizando o algoritmo AES-GCM, que oferece:
+
+- criptografia simétrica segura
+
+- proteção contra alterações (integridade dos dados)
+
+📌 Autenticação de dois fatores (2FA)O sistema implementa autenticação de dois fatores via Google Authenticator.
+O usuário gera um QR Code e valida um código TOTP (Time-based One-Time Password) no login.
+
+📌 Geração de senhas seguras
+O sistema oferece a opção de sugerir senhas aleatórias e fortes, incluindo:
+
+- letras maiúsculas e minúsculas
+
+- números
+
+- símbolos
+
+📌 Verificação de vazamento de senhasO sistema utiliza a API pública Have I Been Pwned para verificar se uma senha já foi exposta em vazamentos conhecidos.
+
+---
+
 ## Tecnologias
 
 - Java 17+
@@ -97,3 +125,8 @@ Desenvolvido como exemplo de boas práticas em gerenciadores de senha.
 - **Backup seguro criptografado**: (Em implementação)
     - Nova opção no menu: "Fazer backup seguro".
     - Gera um arquivo `backup_secure.enc` com todas as credenciais criptografadas.
+
+---
+📧 Contato
+
+Paulo Henrique - paulo.henriquebds0@gmail.com
